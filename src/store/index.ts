@@ -1,5 +1,7 @@
-import { useAppStore } from './module/user'
+import { useUserStore } from './module/user'
+import { useAppStore } from './module/app'
 
 export const useStore = () => ({
-  user: useAppStore()
+  user: useUserStore(),
+  app: useAppStore()
 })

@@ -1,0 +1,41 @@
+.login-container {
+  $bg: #283443;
+  $light_gray: #fff;
+  $cursor: #fff;
+  
+  .el-input {
+    display: inline-block;
+    height: 36px;
+    width: 85%;
+
+    .el-input__wrapper {
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+
+      .el-input__inner {
+        background: transparent;
+        border: 0px;
+        -webkit-appearance: none;
+        border-radius: 0px;
+        color: $light_gray;
+        height: 36px;
+        caret-color: $cursor;
+
+        &:-webkit-autofill {
+          box-shadow: 0 0 0px 1000px $bg inset !important;
+          -webkit-text-fill-color: $cursor !important;
+        }
+      }
+    }
+  }
+
+  .el-input__inner {
+    &:hover {
+      border-color: var(--el-input-hover-border, var(--el-border-color-hover));
+      box-shadow: none;
+    }
+
+    box-shadow: none;
+  }
+}
